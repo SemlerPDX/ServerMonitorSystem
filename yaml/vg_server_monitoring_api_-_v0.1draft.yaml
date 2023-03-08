@@ -1,0 +1,103 @@
+openapi: 3.0.3
+info:
+  title: BMS Server Monitoring API
+  description: |-
+    TODO
+  
+  version: 0.1draft
+
+servers:
+  - url: http://127.0.0.1:2936/
+  
+paths:
+  /serverinfo:
+    get:
+      summary: Get the server info for a running instance of the server monitor
+      operationId: getServerInfo
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerInfo'
+                
+components:
+  schemas:
+    ServerInfo:
+      type: object
+      properties:
+        name:
+          type: string
+          example: "My Awesome Gameserver"
+        serverInfoUrl:
+          type: string
+          format: url
+          example: "https://veterans-gaming.com"
+        bannerImgUrl:
+          type: string
+          format: url
+          example: "https://veterans-gaming.com/uploads/monthly_2021_07/183611468_veteransgamingletters.png.52b99ca06bb87862567f5549d46063a0.png"
+        ip:
+          type: string
+          example: "8.8.8.8"
+        status:
+          type: string
+          enum:
+            - RUNNING
+            - STOPPED
+        uptime:
+          type: string
+          format: duration
+          description: Uptime in ISO8601 format
+          example: "P3Y6M4DT12H30M5S"
+        game:
+          type: string
+          enum:
+            - FALCONBMS
+        gameVersion:
+          type: string
+          example: "4.37U2"
+        falconBmsInfo:
+          $ref: "#/components/schemas/FalconBMSInfo"
+          
+        players:
+          type: array
+          items:
+            $ref: "#/components/schemas/PlayerInfo"
+          example: 
+            - name: "1377 Pl43r"
+              team: ""
+              additionalInfo: ""
+            - name: "Another Player"
+              team: ""
+              additionalInfo: ""
+    
+    FalconBMSInfo:
+      type: object
+      properties:
+        ivcIp:
+          type: string
+          example: "8.8.8.8"
+        theaterName:
+          type: string
+          example: "Balkans"
+        iniFileUrl:
+          type: string
+          format: url
+          example: "https://url.to.our.server/download/123.ini"
+        iniFileName:
+          type: string
+          example: "123.ini"
+          description: required because the URL may not contain the filename (e.g. with GDrive downloads)
+
+    PlayerInfo:
+      type: object
+      properties:
+        name:
+          type: string
+        team:
+          type: string
+        additionalInfo:
+          type: string
+        

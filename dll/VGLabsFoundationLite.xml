@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VGLabsFoundationLite</name>
+    </assembly>
+    <members>
+        <member name="T:VGLabsFoundationLite.Acquisition">
+            <summary>
+            Class for checking VG online JSON App Updates database.
+            </summary>
+        </member>
+        <member name="T:VGLabsFoundationLite.Acquisition.VersionData">
+            <summary>
+            Data class representing information about a software Version.
+            </summary>
+        </member>
+        <member name="T:VGLabsFoundationLite.Acquisition.ApplicationData">
+            <summary>
+            Data class representing information about an application and its versions.
+            </summary>
+        </member>
+        <member name="M:VGLabsFoundationLite.Acquisition.CheckUpdateData(System.String,System.String)">
+            <summary>
+            Check for available updates for the specified application.
+            </summary>
+            <param name="appNameToCheck">The name of the application to check for updates.</param>
+            <param name="currentVersion">The current Version of the application.</param>
+            <returns>
+            A string array containing information about available updates,
+            or null if the update check fails or finds no updates.
+            </returns>
+            <exception cref="T:System.Net.WebException">
+            Thrown when an error occurs while downloading update data from the server.
+            </exception>
+            <exception cref="T:System.Net.Sockets.SocketException">
+            Thrown when the server is unreachable or the connection is lost.
+            </exception>
+            <exception cref="T:VGLabsFoundationLite.Exceptions">
+            Thrown when an unexpected error occurs while checking for update data.
+            </exception>
+        </member>
+        <member name="T:VGLabsFoundationLite.Applications">
+            <summary>
+            Boolean Methods to perform file operations.
+            </summary>
+        </member>
+        <member name="M:VGLabsFoundationLite.Applications.OperationHasClearance(System.String)">
+            <summary>
+            Method to check if application has permission to write file at path specified.
+            </summary>
+            <param name="filePath">File path to check write permissions for.</param>
+            <returns>True if has permissions, false if otherwise.</returns>
+            <exception cref="T:System.Security.SecurityException">
+            Thrown when security error is detected. (returns false)
+            </exception>
+        </member>
+        <member name="M:VGLabsFoundationLite.Applications.LaunchApp(System.String)">
+            <summary>
+            Launches an application or website (using the default browser).
+            </summary>
+            <param name="appPath">
+            The file path of the application to launch or the URL of the website to open.
+            </param>
+            <returns>
+            True if the operation was successful, false otherwise.
+            The method will return true if the application or website was successfully launched,
+            and false if the file path is invalid or the launch process failed.
+            </returns>
+            <exception cref="T:System.ComponentModel.Win32Exception">
+            Thrown when an error occurred when opening the associated file.
+            </exception>
+            <exception cref="T:VGLabsFoundationLite.Exceptions">
+            Thrown when an unexpected error occurs while launching process.
+            </exception>
+        </member>
+        <member name="M:VGLabsFoundationLite.Applications.ProcessIsRunning(System.String)">
+            <summary>
+            Method to check if specified process is currently running.
+            </summary>
+            <param name="processName">Name of the process to check (without extension).</param>
+            <returns>True if process is running, False if not.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when there are problems accessing the performance counter API's used
+               to get process information.
+            </exception>
+            <exception cref="T:VGLabsFoundationLite.Exceptions">
+            Thrown when an unexpected error occurs while checking if process is running.
+            </exception>
+        </member>
+        <member name="T:VGLabsFoundationLite.Exceptions">
+             <summary>
+             Custom exception type that extends the built-in `Exception` class and includes
+               additional functionality for logging errors and events to a file.
+             </summary>
+             <example>
+             Usage examples:
+             <code>
+             try
+             {
+                 // Your code that may throw exception
+             }
+             catch (Exceptions ex)
+             {
+                 ex.LogError($"Your custom message to appear above ex in errors log plus input: {exampleOptionalString}");
+                 // -OPTIONAL- Custom Application Exit with error message in a log entry of the event:
+                 Exceptions.ExitApplication(1);
+             }
+            
+             // Exceptions custom message to error log with timestamp:
+             Exceptions.LogMessage("my error message");
+             </code>
+             </example>
+        </member>
+        <member name="M:VGLabsFoundationLite.Exceptions.CheckAndRotateErrorsLog(System.String)">
+            <summary>
+            Check the size of the errors log file at the given path and rotate the file if it exceeds the maximum size. 
+            </summary>
+            <param name="path">The path to the errors log file.</param>
+            <returns>Returns true if the log file was rotated, false otherwise.</returns>
+        </member>
+        <member name="M:VGLabsFoundationLite.Exceptions.CheckAndRotateErrorsLog(System.String,System.String)">
+            <summary>
+            Check the size of the errors log file with the given name and path and rotate the file if it exceeds the maximum size. 
+            </summary>
+            <param name="path">The path to the directory containing the errors log file.</param>
+            <param name="logFileName">The name of the errors log file.</param>
+            <returns>Returns true if the log file was rotated, false otherwise.</returns>
+        </member>
+        <member name="M:VGLabsFoundationLite.Exceptions.CheckAndRotateErrorsLog(System.String,System.Int64)">
+            <summary>
+            Check the size of the errors log file at the given path and rotate the file if it exceeds the maximum size. 
+            </summary>
+            <param name="path">The path to the errors log file.</param>
+            <param name="maxBytes">The maximum file size in bytes.</param>
+            <returns>Returns true if the log file was rotated, false otherwise.</returns>
+        </member>
+        <member name="M:VGLabsFoundationLite.Exceptions.CheckAndRotateErrorsLog(System.String,System.String,System.Int64)">
+            <summary>
+            Check the size of the errors log file with the given name and path and rotate the file if it exceeds the maximum size. 
+            </summary>
+            <param name="path">The path to the directory containing the errors log file.</param>
+            <param name="logFileName">The name of the errors log file.</param>
+            <param name="maxBytes">The maximum file size in bytes.</param>
+            <returns>Returns true if the log file was rotated, false otherwise.</returns>
+        </member>
+        <member name="M:VGLabsFoundationLite.Exceptions.ExitApplication(System.Int32)">
+            <summary>
+            Exits the application with the specified exit code after logging an error message.
+            </summary>
+            <param name="exitCode">The exit code to be returned by the application.</param>
+        </member>
+        <member name="M:VGLabsFoundationLite.Exceptions.LogEvents(System.String)">
+            <summary>
+            Logs the specified alert message to the default log file silently.
+            </summary>
+            <param name="alert">The alert message to be logged.</param>
+        </member>
+        <member name="M:VGLabsFoundationLite.Exceptions.LogEvents(System.String,System.String)">
+            <summary>
+            Logs the specified alert message to the specified log file silently.
+            </summary>
+            <param name="alert">The alert message to be logged.</param>
+            <param name="logFileName">The name of the log file to which the alert message should be logged.</param>
+        </member>
+        <member name="M:VGLabsFoundationLite.Exceptions.LogMessage(System.String)">
+            <summary>
+            Log a simple timestamped note to the errors log and present message in console.
+            </summary>
+            <param name="message">The message to be logged</param>
+        </member>
+        <member name="M:VGLabsFoundationLite.Exceptions.LogError(System.String)">
+            <summary>
+            Log an error to the error log with the specified notes.
+            </summary>
+            <param name="notes">The notes to be logged with the error.</param>
+        </member>
+        <member name="T:VGLabsFoundationLite.IAcquisitionInterface">
+            <summary>
+            Interface for Acquisition Class
+            </summary>
+        </member>
+        <member name="M:VGLabsFoundationLite.IAcquisitionInterface.CheckUpdateData(System.String,System.String)">
+            <summary>
+            Check for available updates for the specified application.
+            </summary>
+            <param name="appNameToCheck">The name of the application to check for updates.</param>
+            <param name="currentVersion">The current Version of the application.</param>
+            <returns>
+            A string array containing information about available updates,
+            or null if the update check fails or finds no updates.
+            </returns>
+            <exception cref="T:System.Net.WebException">
+            Thrown when an error occurs while downloading update data from the server.
+            </exception>
+            <exception cref="T:System.Net.Sockets.SocketException">
+            Thrown when the server is unreachable or the connection is lost.
+            </exception>
+            <exception cref="T:VGLabsFoundationLite.Exceptions">
+            Thrown when an unexpected error occurs while checking for update data.
+            </exception>
+        </member>
+        <member name="T:VGLabsFoundationLite.IApplicationsInterface">
+            <summary>
+            Interface for Applications Class
+            </summary>
+        </member>
+        <member name="M:VGLabsFoundationLite.IApplicationsInterface.OperationHasClearance(System.String)">
+            <summary>
+            Method to check if application has permission to write file at path specified.
+            </summary>
+            <param name="filePath">File path to check write permissions for.</param>
+            <returns>True if has permissions, false if otherwise.</returns>
+            <exception cref="T:System.Security.SecurityException">
+            Thrown when security error is detected. (returns false)
+            </exception>
+        </member>
+        <member name="M:VGLabsFoundationLite.IApplicationsInterface.LaunchApp(System.String)">
+            <summary>
+            Launches an application or website (using the default browser).
+            </summary>
+            <param name="appPath">
+            The file path of the application to launch or the URL of the website to open.
+            </param>
+            <returns>
+            True if the operation was successful, false otherwise.
+            The method will return true if the application or website was successfully launched,
+            and false if the file path is invalid or the launch process failed.
+            </returns>
+            <exception cref="T:System.ComponentModel.Win32Exception">
+            Thrown when an error occurred when opening the associated file.
+            </exception>
+            <exception cref="T:VGLabsFoundationLite.Exceptions">
+            Thrown when an unexpected error occurs while launching process.
+            </exception>
+        </member>
+        <member name="M:VGLabsFoundationLite.IApplicationsInterface.ProcessIsRunning(System.String)">
+            <summary>
+            Method to check if specified process is currently running.
+            </summary>
+            <param name="processName">Name of the process to check (without extension).</param>
+            <returns>True if process is running, False if not.</returns>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when there are problems accessing the performance counter API's used
+               to get process information.
+            </exception>
+            <exception cref="T:VGLabsFoundationLite.Exceptions">
+            Thrown when an unexpected error occurs while checking if process is running.
+            </exception>
+        </member>
+    </members>
+</doc>
