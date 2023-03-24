@@ -76,7 +76,7 @@ namespace ServerMonitorSystem
             {
                 string hours = String.Format("{0} (hour{1})", _configManager.Duration, _configManager.Duration > 1 ? "s" : "");
                 Console.WriteLine("  -Max duration: {0}", _configManager.Duration == 0 ? " (endless)" : hours);
-                Console.WriteLine("  -Log frequency: {0}", _configManager.Frequency > 1 ? "s" : "");
+                Console.WriteLine("  -Log frequency: {0} (minute{1})", _configManager.Frequency, _configManager.Frequency > 1 ? "s" : "");
                 Console.WriteLine("  -Max log size:  {0} (MB)", _configManager.LogSize);
             }
 

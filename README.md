@@ -44,9 +44,9 @@ __[https://veterans-gaming.com/semlerpdx/vglabs/apps/PLACEHOLDER/](https://veter
 
 #### Latest Changelog & Checksum:  [CLICK HERE (placeholder)](https://veterans-gaming.com/semlerpdx/vglabs/apps/PLACEHOLDER.html)
 
-![https://i.imgur.com/Y1Jy8sj.png](https://i.imgur.com/Y1Jy8sj.png)
+![https://i.imgur.com/CZEbmBd.png](https://i.imgur.com/CZEbmBd.png)
 <br> **↑ update notice example shown above ↑** </br>
-![https://i.imgur.com/UXtBFKV.png](https://i.imgur.com/UXtBFKV.png)
+![https://i.imgur.com/grxBaoQ.png](https://i.imgur.com/grxBaoQ.png)
 
 ![https://i.imgur.com/1B5thJ8.png](https://i.imgur.com/1B5thJ8.png)
 </div>

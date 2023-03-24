@@ -11,7 +11,7 @@ namespace ServerMonitorSystem
         #region command_parameters
         public string Name { get; } = "exit";
         public string Usage { get; } = "exit";
-        public string Description { get; } = "Stop all monitoring functions and close this application\n";
+        public string Description { get; } = "Stop all monitoring functions and close this application";
         public bool ConfigSetting { get; } = false;
         #endregion
 

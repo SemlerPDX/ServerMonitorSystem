@@ -45,18 +45,18 @@ namespace ServerMonitorSystem
         [ConfigProperty(4)]
         public bool AlertsALL { get; set; }
         [ConfigProperty(5)]
-        public bool AlertsGame { get; set; }
+        public bool AlertsGame { get; set; } = true;
         [ConfigProperty(6)]
-        public bool AlertsVOIP { get; set; }
+        public bool AlertsVOIP { get; set; } = true;
         [ConfigProperty(7)]
         public bool AlertsMEM { get; set; }
 
         [ConfigProperty(8)]
-        public bool EmailsALL { get; set; }
+        public bool EmailsALL { get; set; } = true;
         [ConfigProperty(9)]
-        public bool EmailsGame { get; set; }
+        public bool EmailsGame { get; set; } = true;
         [ConfigProperty(10)]
-        public bool EmailsVOIP { get; set; }
+        public bool EmailsVOIP { get; set; } = true;
         [ConfigProperty(11)]
         public bool EmailsMEM { get; set; }
 

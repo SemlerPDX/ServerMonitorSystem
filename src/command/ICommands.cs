@@ -1,7 +1,7 @@
 ﻿namespace ServerMonitorSystem
 {
     /// <summary>
-    /// Console commands interface providing access to command properties and exection methods.
+    /// Console commands interface providing access to command properties and execution methods.
     /// <para>
     /// (see also <seealso cref="ICommand_Manager.LoadCommands()"/> &amp; <seealso cref="ICommand_Manager.ProcessCommand(string)"/>)
     /// </para>
@@ -29,7 +29,7 @@
         bool ConfigSetting { get; } // ex. true when command saves a config property
 
         /// <summary>
-        /// Evaluate if this command based on the supplied user input.
+        /// Evaluate if this command should run based on the supplied user input.
         /// </summary>
         /// <param name="args">The user input from console split at whitespace into a string array.</param>
         bool CanExecute(string[] args);

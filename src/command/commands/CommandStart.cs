@@ -36,7 +36,7 @@ namespace ServerMonitorSystem
         #region command_parameters
         public string Name { get; } = "start";
         public string Usage { get; } = "start";
-        public string Description { get; } = "Start Server Alert monitoring systems";
+        public string Description { get; } = "Start Server Alert monitoring systems\n";
         public bool ConfigSetting { get; } = false;
         #endregion
 

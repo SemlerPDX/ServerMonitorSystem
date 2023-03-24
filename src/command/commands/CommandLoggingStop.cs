@@ -36,7 +36,7 @@ namespace ServerMonitorSystem
         #region command_parameters
         public string Name { get; } = "logging stop";
         public string Usage { get; } = "logging stop";
-        public string Description { get; } = "Stop Memory Data Logging to CSV file";
+        public string Description { get; } = "Stop Memory Data Logging to CSV file\n";
         public bool ConfigSetting { get; } = true;
 
         private const string DEFAULT_PROPERTY_CHANGED = "logging"; // must match configManager property used below (lowercase) for command line overrides

@@ -75,11 +75,13 @@ namespace ServerMonitorSystem
         {
             InitializeCommandProperties();
 
-            string userInput = "";
-            while (userInput != "exit")
+            string userInput;
+            do
             {
                 userInput = _consoleManager.GetExitCommand(_configManager.CommandUsages, _configManager.CommandDescriptions);
             }
+            while (userInput != "exit");
+
             return;
         }
 
@@ -95,12 +97,13 @@ namespace ServerMonitorSystem
                 InitializeCommandProperties();
                 _initManager.InitializeApp(args);
 
-                string userInput = "";
-                while (userInput != "exit")
+                string userInput;
+                do
                 {
                     userInput = _consoleManager.GetInputCommand();
                     _commandManager.ProcessCommand(userInput ?? "");
                 }
+                while (userInput != "exit") ;
 
                 CloseApp();
             }

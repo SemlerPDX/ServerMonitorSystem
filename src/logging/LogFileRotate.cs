@@ -26,7 +26,7 @@ namespace ServerMonitorSystem
                 }
             }
 
-            maxBytes *= 1000 * 1000;
+            maxBytes *= 1024 * 1024;
 
             if (fileSize > maxBytes)
             {

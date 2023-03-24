@@ -70,45 +70,45 @@ namespace ServerMonitorSystem
             _commands = new List<ICommands>
             {
                 new CommandReloadApp(_configManager, _timerManager),
-                new CommandReport(_consoleManager),
+                //new CommandReport(_consoleManager),
                 new CommandStop(_timerManager),
                 new CommandStart(_configManager, _timerManager),
-                new CommandInterval(_configManager, _consoleManager),
+                //new CommandInterval(_configManager, _consoleManager),
 
-                new CommandAlerts(_configManager),
-                new CommandAlertsGame(_configManager),
-                new CommandAlertsVOIP(_configManager),
-                new CommandAlertsMEM(_configManager),
+                //new CommandAlerts(_configManager),
+                //new CommandAlertsGame(_configManager),
+                //new CommandAlertsVOIP(_configManager),
+                //new CommandAlertsMEM(_configManager),
 
-                new CommandEmails(_configManager),
-                new CommandEmailsGame(_configManager),
-                new CommandEmailsVOIP(_configManager),
-                new CommandEmailsMEM(_configManager),
+                //new CommandEmails(_configManager),
+                //new CommandEmailsGame(_configManager),
+                //new CommandEmailsVOIP(_configManager),
+                //new CommandEmailsMEM(_configManager),
 
                 new CommandEmailList(_consoleManager, _emailManager),
                 new CommandEmailAdd(_configManager, _consoleManager),
                 new CommandEmailDelete(_configManager, _emailManager, _consoleManager),
                 new CommandEmailTest(_consoleManager, _emailManager),
 
-                new CommandMaxMem(_configManager, _consoleManager),
-                new CommandMinTime(_configManager, _consoleManager),
+                //new CommandMaxMem(_configManager, _consoleManager),
+                //new CommandMinTime(_configManager, _consoleManager),
 
-                new CommandAutoKill(_configManager),
-                new CommandAutoKillMaxMem(_configManager, _consoleManager),
+                //new CommandAutoKill(_configManager),
+                //new CommandAutoKillMaxMem(_configManager, _consoleManager),
 
                 new CommandLoggingStart(_configManager, _timerManager),
                 new CommandLoggingStop(_configManager, _timerManager),
 
-                new CommandFrequency(_configManager, _consoleManager),
-                new CommandDuration(_configManager, _consoleManager),
-                new CommandLogSize(_configManager, _consoleManager),
+                //new CommandFrequency(_configManager, _consoleManager),
+                //new CommandDuration(_configManager, _consoleManager),
+                //new CommandLogSize(_configManager, _consoleManager),
 
-                new CommandClear(),
-                new CommandExit(),
-                new CommandUpdates(_infoUpdates),
+                //new CommandClear(),
+                //new CommandUpdates(_infoUpdates),
                 new CommandPlayers(_infoFalconBMS),
                 new CommandHelp(_configManager, _consoleManager),
-                new CommandHelpList(_configManager, _consoleManager)
+                //new CommandHelpList(_configManager, _consoleManager)
+                new CommandExit(),
             };
 
         }

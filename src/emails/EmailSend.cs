@@ -62,7 +62,7 @@ namespace ServerMonitorSystem
 
         private static readonly string DEFAULT_EMAIL_SUBJECT = "Test Email Successful!";
         private static readonly string DEFAULT_EMAIL_BODY = "(This is only a test of the email system) - If you have received this message, it means SMTP mail is working.";
-        private static readonly float[] DEFAULT_MEMORY_DATA = { 0f, 0f, 0f };
+        private static readonly float[] DEFAULT_MEMORY_DATA = { 0F, 0F, 0F };
 
         /// <summary>
         /// A class providing a container for email details.
@@ -104,7 +104,7 @@ namespace ServerMonitorSystem
         private string FormatMemoryMetric(float memoryInMB, string metricName)
         {
             // MB to GB string format conversion method for email HTML table
-            float memoryInGB = memoryInMB / 1024f;
+            float memoryInGB = memoryInMB / 1024F;
             return string.Format(@"{0}{1:F2} GB</td></tr>", metricName, memoryInGB);
         }
 
