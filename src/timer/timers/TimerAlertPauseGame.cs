@@ -28,7 +28,7 @@ namespace ServerMonitorSystem
 
         private System.Timers.Timer _timer;
 
-        private const double DEFAULT_INTERVAL = 60000d; // default 1 minute interval (60000)
+        private const double DEFAULT_INTERVAL = 60000D; // default 1 minute interval (60000)
         public string Name { get; } = "game";
         public string Type { get; } = "cooldown";
 

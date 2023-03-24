@@ -285,7 +285,7 @@ namespace ServerMonitorSystem
         /// </summary>
         string LogFilePath { get; set; }
         /// <summary>
-        /// Memory Data Logging max file size per log (in megabytes) [default:1000 minimum:1 maximum:4000]
+        /// Memory Data Logging max file size per log (in megabytes) [default:1024 minimum:1 maximum:4096]
         /// </summary>
         long LogSize { get; set; }
 

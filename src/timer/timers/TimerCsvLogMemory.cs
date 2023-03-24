@@ -57,7 +57,7 @@ namespace ServerMonitorSystem
 
             _configManager.LoggingCsvTimerActive = true;
 #if DEBUG
-            _timer = new System.Timers.Timer(15000);
+            _timer = new System.Timers.Timer(15000D);
 #else
             _timer = new System.Timers.Timer(System.Convert.ToDouble(minutes * 60 * 1000));
 #endif

@@ -46,7 +46,7 @@ namespace ServerMonitorSystem
 
         // Set the number range default values in the appropriate number type ex. private const float ...
         private const long DEFAULT_NUMBER_MIN = 1L;
-        private const long DEFAULT_NUMBER_MAX = 4000L;
+        private const long DEFAULT_NUMBER_MAX = 4096L;
 
         // Cast ConfigValue and NewValue as appropriate type referring to configManager property and an out of range default value
         private long ConfigValue { get => _configManager.LogSize; set => _configManager.LogSize = value; }

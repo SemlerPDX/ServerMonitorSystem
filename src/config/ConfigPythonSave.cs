@@ -73,7 +73,7 @@ namespace ServerMonitorSystem
             "<int> Set Memory Data Logging duration (in hours, 0 = endless) [default:0 maximum:11000]",
 
             @"<string> Memory Logging CSV file path (surround in single-quotes, escape '\' with doubles) -example:  LogFilePath = 'C:\\folder\\filename.csv'",
-            "<long> Memory Data Logging max file size per log (in megabytes) [default:1000 minimum:1 maximum:4000]",
+            "<long> Memory Data Logging max file size per log (in megabytes) [default:1024 minimum:1 maximum:4096]",
 
             "<string[]> Admin Addresses for email Alerts (comma separated array) -example:  Emails = ('Jack example@gmail.com','Jill otherExample@gmail.com')",
             "<string> Protocol of the outgoing SMTP server (surround in single-quotes) -example:  SMTP_Protocol = 'smtp.gmail.com'",
