@@ -70,7 +70,7 @@ namespace ServerMonitorSystem
             _commands = new List<ICommands>
             {
                 new CommandReloadApp(_configManager, _timerManager),
-                //new CommandReport(_consoleManager),
+                new CommandReport(_consoleManager),
                 new CommandStop(_timerManager),
                 new CommandStart(_configManager, _timerManager),
                 //new CommandInterval(_configManager, _consoleManager),
@@ -96,8 +96,8 @@ namespace ServerMonitorSystem
                 //new CommandAutoKill(_configManager),
                 //new CommandAutoKillMaxMem(_configManager, _consoleManager),
 
-                new CommandLoggingStart(_configManager, _timerManager),
-                new CommandLoggingStop(_configManager, _timerManager),
+                new CommandLogging(_configManager, _timerManager),
+                //new CommandLoggingStop(_configManager, _timerManager),
 
                 //new CommandFrequency(_configManager, _consoleManager),
                 //new CommandDuration(_configManager, _consoleManager),

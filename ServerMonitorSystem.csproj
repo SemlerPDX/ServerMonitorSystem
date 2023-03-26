@@ -263,6 +263,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\command\commands\CommandLogging.cs" />
     <Compile Include="src\command\commands\CommandExit.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="src\command\commands\CommandClear.cs" />
