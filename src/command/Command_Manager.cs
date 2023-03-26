@@ -97,6 +97,7 @@ namespace ServerMonitorSystem
                 //new CommandAutoKillMaxMem(_configManager, _consoleManager),
 
                 new CommandLogging(_configManager, _timerManager),
+                //new CommandLoggingStart(_configManager, _timerManager),
                 //new CommandLoggingStop(_configManager, _timerManager),
 
                 //new CommandFrequency(_configManager, _consoleManager),
