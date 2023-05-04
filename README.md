@@ -85,3 +85,15 @@ ____
 
 *- SemlerPDX Mar-7-2023 -*</div>
 
+
+
+---
+
+## &nbsp; &nbsp; &nbsp; &nbsp; This freeware project is a product of several months of development and testing.
+
+
+ &nbsp; &nbsp; &nbsp; [![Support me on Patreon](https://i.imgur.com/GwtLHWO.png)](https://www.patreon.com/SemlerPDX) &nbsp; &nbsp; &nbsp; [![Donate at PayPal](https://i.imgur.com/ugCWkPd.png)](https://veterans-gaming.com/semlerpdx/donate/) &nbsp; &nbsp; &nbsp; [![Buy me a Coffee](https://i.imgur.com/254gG7A.png)](https://www.buymeacoffee.com/semlerpdx)
+ 
+ # &nbsp; Gratuity is greatly appreciated and highly encouraging! Thank you!
+ 
+---
