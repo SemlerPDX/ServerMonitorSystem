@@ -89,11 +89,11 @@ ____
 
 ---
 
-### &nbsp; &nbsp; &nbsp; &nbsp; This freeware project is a product of several months of development and testing.
+### &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; This freeware project is a product of several months of development and testing.
 
 
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [![Support me on Patreon](https://i.imgur.com/eUHzY5R.png)](https://www.patreon.com/SemlerPDX) &nbsp; &nbsp; &nbsp; [![Donate at PayPal](https://i.imgur.com/fgrCUPF.png)](https://veterans-gaming.com/semlerpdx/donate/) &nbsp; &nbsp; &nbsp; [![Buy me a Coffee](https://i.imgur.com/MkmhDDa.png)](https://www.buymeacoffee.com/semlerpdx)
- 
- ## &nbsp; Gratuity is greatly appreciated and highly encouraging! Thank you!
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [![Support me on Patreon](https://i.imgur.com/eUHzY5R.png)](https://www.patreon.com/SemlerPDX) &nbsp; &nbsp; &nbsp; [![Donate at PayPal](https://i.imgur.com/fgrCUPF.png)](https://veterans-gaming.com/semlerpdx/donate/) &nbsp; &nbsp; &nbsp; [![Buy me a Coffee](https://i.imgur.com/MkmhDDa.png)](https://www.buymeacoffee.com/semlerpdx)
+
+## &nbsp; &nbsp; &nbsp; &nbsp; Gratuity is greatly appreciated and highly encouraging! Thank you!
  
 ---
