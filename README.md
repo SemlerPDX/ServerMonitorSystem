@@ -1,7 +1,7 @@
 
 ---
 
-### &nbsp; &nbsp; &nbsp; &nbsp; This freeware project is a product of several months of development and testing.
+### &nbsp; &nbsp; &nbsp; This freeware project is the product of several months of development and testing.
 
 
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [![Support me on Patreon](https://i.imgur.com/DWOV1kw.png)](https://www.patreon.com/SemlerPDX) &nbsp; &nbsp; &nbsp; [![Donate at PayPal](https://i.imgur.com/fgrCUPF.png)](https://veterans-gaming.com/semlerpdx/donate/) &nbsp; &nbsp; &nbsp; [![Buy me a Coffee](https://i.imgur.com/MkmhDDa.png)](https://www.buymeacoffee.com/semlerpdx)
