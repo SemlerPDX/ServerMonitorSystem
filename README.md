@@ -1,6 +1,4 @@
 
-- [Getting Started](/SemlerPDX/ServerMonitorSystem/wiki#Getting-Started)
-
 ---
 
 ### &nbsp; &nbsp; &nbsp; &nbsp;This freeware project is the product of several months of development and testing.
