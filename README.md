@@ -1,5 +1,5 @@
 
-- [Getting Started](wiki#Getting-Started)
+- [Getting Started](/SemlerPDX/ServerMonitorSystem/wiki#Getting-Started)
 
 ---
 
