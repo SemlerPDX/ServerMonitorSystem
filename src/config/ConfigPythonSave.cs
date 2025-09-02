@@ -19,7 +19,7 @@ namespace ServerMonitorSystem
         {
                 "# ############################################# ",
                 "#  VG Labs - Server Monitor System - Config File",
-                "#    by SemlerPDX  Feb2023  CC BY-NC-ND",
+                "#    by SemlerPDX  Feb2023   GNU GPL v2.0",
                 "# ",
                 "# https://github.com/SemlerPDX",
                 "# ",

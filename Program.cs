@@ -8,7 +8,7 @@ namespace ServerMonitorSystem
 {
     /// <summary>
     /// VG Labs - Server Monitor System
-    /// <br>by SemlerPDX Feb2023 CC BY-NC-ND</br>
+    /// <br>by SemlerPDX Feb2023 GNU GPL v2.0</br>
     /// <br><see href="https://github.com/SemlerPDX">github.com/SemlerPDX</see></br>
     /// <para>
     /// A program to monitor game and voice server status with several optional features:
