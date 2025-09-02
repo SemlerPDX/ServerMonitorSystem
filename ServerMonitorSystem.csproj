@@ -403,7 +403,6 @@
     <Content Include="img\icon-FULL.png" />
     <Content Include="img\icon.ico" />
     <Content Include="img\vg_server_publishing.drawio.png" />
-    <Content Include="LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
